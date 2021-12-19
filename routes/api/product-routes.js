@@ -55,18 +55,8 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   try {
-    const product = await Product.create(req.body)
-    if (req.body.tagIds.length) {
-      const productTags = req.body.tagIds.map((tag_id) => {
-        return {
-          product_id: product.id,
-          tag_id,
-        };
-      });
-      const productTagIds = ProductTag.bulkCreate(productTags);
-      res.status(300).json(productTagIds)
-    };
-    res.status(300).json(product);
+    const data = await Product.create(req.body)
+    res.status(300).json(data);
   } catch (error) {
     console.log(error);
     res.status(400).json(error);
