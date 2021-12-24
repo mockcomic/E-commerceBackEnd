@@ -23,4 +23,4 @@ THEN the data for each of these routes is displayed in a formatted JSON
 THEN I am able to successfully create, update, and delete data in my database
 
 ## Video
-https://drive.google.com/file/d/1OgqQ7MEj4b4BznmFJ4kKl1-hCNQRJsWs/view
+https://drive.google.com/file/d/1-AxCcxhtbLrsTFQ1wcFL5tNYLOIpO8v5/view?usp=sharing
